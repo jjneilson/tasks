@@ -3,23 +3,6 @@
 > react-scripts test "--coverage"
 
 PASS src/nested.test.ts
-  ● Console
-
-    console.log
-      0
-
-      at duplicateQuestionInArray (src/nested.ts:266:13)
-
-    console.log
-      1
-
-      at duplicateQuestionInArray (src/nested.ts:266:13)
-
-    console.log
-      2
-
-      at duplicateQuestionInArray (src/nested.ts:266:13)
-
 PASS src/arrays.test.ts
 PASS src/objects.test.ts
 PASS src/HtmlCss.test.tsx
@@ -29,8 +12,8 @@ PASS src/App.test.tsx
 ----------------|---------|----------|---------|---------|-------------------
 File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------|---------|----------|---------|---------|-------------------
-All files       |   99.15 |    98.14 |     100 |   99.12 |                   
- src            |   99.15 |    98.14 |     100 |   99.12 |                   
+All files       |   99.15 |    98.14 |     100 |   99.11 |                   
+ src            |   99.15 |    98.14 |     100 |   99.11 |                   
   App.tsx       |     100 |      100 |     100 |     100 |                   
   arrays.ts     |     100 |      100 |     100 |     100 |                   
   functions.ts  |     100 |      100 |     100 |     100 |                   
@@ -44,5 +27,5 @@ All files       |   99.15 |    98.14 |     100 |   99.12 |
 Test Suites: 7 passed, 7 total
 Tests:       49 passed, 49 total
 Snapshots:   0 total
-Time:        4.536 s
+Time:        4.523 s
 Ran all test suites.
