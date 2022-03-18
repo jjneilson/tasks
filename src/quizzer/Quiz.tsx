@@ -26,7 +26,9 @@ export function Quiz({
         <div>
             <h4>{stateTitle}</h4>
             <div>{stateDescription}</div>
-            <div>Points: {statePoints}</div>
+            <div>
+                Questions: {stateQuestions.length} Points: {statePoints}
+            </div>
             {view &&
                 stateQuestions.map((question: Question) => (
                     <Question_C
