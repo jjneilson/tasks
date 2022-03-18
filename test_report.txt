@@ -77,7 +77,9 @@ FAIL src/App.test.tsx
                       [0mThe first math quiz[0m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mPoints: [0m
+                      [0mQuestions: [0m
+                      [0m2[0m
+                      [0m Points: [0m
                       [0m2[0m
                     [36m</div>[39m
                     [36m<button[39m
@@ -110,7 +112,9 @@ FAIL src/App.test.tsx
                       [0mThe second math quiz[0m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mPoints: [0m
+                      [0mQuestions: [0m
+                      [0m2[0m
+                      [0m Points: [0m
                       [0m0[0m
                     [36m</div>[39m
                     [36m<button[39m
@@ -151,7 +155,16 @@ FAIL src/App.test.tsx
                   [0mAdded Sketch[0m
                 [36m</li>[39m
                 [36m<li>[39m
-                  [0mCan add a new quiz[0m
+                  [0mUsers can see a list of quizzes, including the quizzes title, description, and how many questions it has[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can select a specific quiz to see the questions, including the question’s name, body, and points Quiz questions can be of AT LEAST two types: a short answer question or multiple choice question[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can enter or choose an answer for a quiz question, and be told if they are correct[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can add a new quiz[0m
                 [36m</li>[39m
               [36m</ul>[39m
             [36m</div>[39m
@@ -212,7 +225,7 @@ All files                    |   91.98 |    86.98 |   92.02 |   91.76 |
   question.ts                |       0 |        0 |       0 |       0 |                   
  src/quizzer                 |   44.11 |    34.78 |    37.5 |   44.11 |                   
   Question_C.tsx             |       0 |        0 |       0 |       0 | 17-92             
-  Quiz.tsx                   |      70 |    88.88 |      25 |      70 | 32-48             
+  Quiz.tsx                   |      70 |    88.88 |      25 |      70 | 34-50             
   QuizList.tsx               |    87.5 |      100 |      80 |    87.5 | 57                
   Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
@@ -273,7 +286,9 @@ FAIL src/App.test.tsx
                       [0mThe first math quiz[0m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mPoints: [0m
+                      [0mQuestions: [0m
+                      [0m2[0m
+                      [0m Points: [0m
                       [0m2[0m
                     [36m</div>[39m
                     [36m<button[39m
@@ -306,7 +321,9 @@ FAIL src/App.test.tsx
                       [0mThe second math quiz[0m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mPoints: [0m
+                      [0mQuestions: [0m
+                      [0m2[0m
+                      [0m Points: [0m
                       [0m0[0m
                     [36m</div>[39m
                     [36m<button[39m
@@ -347,7 +364,16 @@ FAIL src/App.test.tsx
                   [0mAdded Sketch[0m
                 [36m</li>[39m
                 [36m<li>[39m
-                  [0mCan add a new quiz[0m
+                  [0mUsers can see a list of quizzes, including the quizzes title, description, and how many questions it has[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can select a specific quiz to see the questions, including the question’s name, body, and points Quiz questions can be of AT LEAST two types: a short answer question or multiple choice question[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can enter or choose an answer for a quiz question, and be told if they are correct[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can add a new quiz[0m
                 [36m</li>[39m
               [36m</ul>[39m
             [36m</div>[39m
@@ -379,5 +405,5 @@ FAIL src/App.test.tsx
 Test Suites: 2 failed, 19 passed, 21 total
 Tests:       2 failed, 133 passed, 135 total
 Snapshots:   0 total
-Time:        17.163 s
+Time:        12.156 s
 Ran all test suites.
