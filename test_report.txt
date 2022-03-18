@@ -67,9 +67,81 @@ FAIL src/App.test.tsx
           [36m<hr />[39m
           [36m<div>[39m
             [36m<div>[39m
-              [36m<h3>[39m
-                [0mQuizzer[0m
-              [36m</h3>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<div>[39m
+                    [36m<h4>[39m
+                      [0mMath Quiz 1[0m
+                    [36m</h4>[39m
+                    [36m<div>[39m
+                      [0mThe first math quiz[0m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mPoints: [0m
+                      [0m2[0m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle View Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle Edit Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Quiz[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<hr />[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<div>[39m
+                    [36m<h4>[39m
+                      [0mMath Quiz 2[0m
+                    [36m</h4>[39m
+                    [36m<div>[39m
+                      [0mThe second math quiz[0m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mPoints: [0m
+                      [0m0[0m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle View Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle Edit Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Quiz[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<hr />[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mAdd new empty quiz[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
               [36m<img[39m
                 [33malt[39m=[32m"App Sketch"[39m
                 [33msrc[39m=[32m"sketch.jpg"[39m
@@ -77,6 +149,9 @@ FAIL src/App.test.tsx
               [36m<ul>[39m
                 [36m<li>[39m
                   [0mAdded Sketch[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mCan add a new quiz[0m
                 [36m</li>[39m
               [36m</ul>[39m
             [36m</div>[39m
@@ -107,7 +182,7 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   99.12 |    96.74 |   99.18 |   99.09 |                   
+All files                    |   91.98 |    86.98 |   92.02 |   91.76 |                   
  src                         |   98.31 |    95.16 |   98.57 |   98.24 |                   
   App.tsx                    |   66.66 |       75 |      50 |   66.66 | 32                
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
@@ -135,7 +210,10 @@ All files                    |   99.12 |    96.74 |   99.18 |   99.09 |
  src/interfaces              |       0 |        0 |       0 |       0 |                   
   answer.ts                  |       0 |        0 |       0 |       0 |                   
   question.ts                |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |     100 |      100 |     100 |     100 |                   
+ src/quizzer                 |   44.11 |    34.78 |    37.5 |   44.11 |                   
+  Question_C.tsx             |       0 |        0 |       0 |       0 | 17-92             
+  Quiz.tsx                   |      70 |    88.88 |      25 |      70 | 32-48             
+  QuizList.tsx               |    87.5 |      100 |      80 |    87.5 | 57                
   Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
 Summary of all failing tests
@@ -185,9 +263,81 @@ FAIL src/App.test.tsx
           [36m<hr />[39m
           [36m<div>[39m
             [36m<div>[39m
-              [36m<h3>[39m
-                [0mQuizzer[0m
-              [36m</h3>[39m
+              [36m<div>[39m
+                [36m<div>[39m
+                  [36m<div>[39m
+                    [36m<h4>[39m
+                      [0mMath Quiz 1[0m
+                    [36m</h4>[39m
+                    [36m<div>[39m
+                      [0mThe first math quiz[0m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mPoints: [0m
+                      [0m2[0m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle View Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle Edit Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Quiz[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<hr />[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<div>[39m
+                    [36m<h4>[39m
+                      [0mMath Quiz 2[0m
+                    [36m</h4>[39m
+                    [36m<div>[39m
+                      [0mThe second math quiz[0m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mPoints: [0m
+                      [0m0[0m
+                    [36m</div>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle View Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mToggle Edit Quiz[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mDelete Quiz[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<hr />[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mAdd new empty quiz[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
               [36m<img[39m
                 [33malt[39m=[32m"App Sketch"[39m
                 [33msrc[39m=[32m"sketch.jpg"[39m
@@ -195,6 +345,9 @@ FAIL src/App.test.tsx
               [36m<ul>[39m
                 [36m<li>[39m
                   [0mAdded Sketch[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mCan add a new quiz[0m
                 [36m</li>[39m
               [36m</ul>[39m
             [36m</div>[39m
@@ -226,5 +379,5 @@ FAIL src/App.test.tsx
 Test Suites: 2 failed, 19 passed, 21 total
 Tests:       2 failed, 133 passed, 135 total
 Snapshots:   0 total
-Time:        11.86 s
+Time:        17.163 s
 Ran all test suites.
