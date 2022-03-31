@@ -41,7 +41,11 @@ const PREMADES = [
         questions: [...question],
         title: "Math Quiz 2",
         description: "The second math quiz",
-        points: 0
+        points: [...question].reduce(
+            (total: number, questions: Question): number =>
+                total + questions.points,
+            0
+        )
     }
 ];
 
