@@ -41,6 +41,7 @@ export function Quiz({
                         expected={question.expected}
                         points={question.points}
                         published={question.published}
+                        edit={edit}
                     ></Question_C>
                 ))}
             {!edit && (
