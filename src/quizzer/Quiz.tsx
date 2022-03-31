@@ -29,7 +29,7 @@ export function Quiz({
             <div>
                 Questions: {stateQuestions.length} Points: {statePoints}
             </div>
-            {view &&
+            {(view || edit) &&
                 stateQuestions.map((question: Question) => (
                     <Question_C
                         key={question.id}
