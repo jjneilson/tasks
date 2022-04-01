@@ -74,6 +74,18 @@ function AddQuiz({ setQuizzes, quizzes }: listprops): JSX.Element {
     );
 }
 
+function RemoveQuiz({ setQuizzes, quizzes }: listprops): JSX.Element {
+    return (
+        <Button
+            onClick={() =>
+                setQuizzes([...quizzes.splice(0, quizzes.length - 1)])
+            }
+        >
+            Delete Last Quiz
+        </Button>
+    );
+}
+
 export function QuizList(): JSX.Element {
     const [quizzes, setQuizzes] = useState<Quiz_Int[]>(PREMADES);
     return (
@@ -90,6 +102,7 @@ export function QuizList(): JSX.Element {
                 </div>
             ))}
             <AddQuiz setQuizzes={setQuizzes} quizzes={quizzes}></AddQuiz>
+            <RemoveQuiz setQuizzes={setQuizzes} quizzes={quizzes}></RemoveQuiz>
         </div>
     );
 }

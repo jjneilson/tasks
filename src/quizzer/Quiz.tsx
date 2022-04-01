@@ -41,7 +41,6 @@ export function Quiz({
                         expected={question.expected}
                         points={question.points}
                         published={question.published}
-                        edit={edit}
                     ></Question_C>
                 ))}
             {!edit && (
@@ -50,7 +49,6 @@ export function Quiz({
             {!view && (
                 <Button onClick={() => setEdit(!edit)}>Toggle Edit Quiz</Button>
             )}
-            {!edit && !view && <Button>Delete Quiz</Button>}
         </div>
     );
 }

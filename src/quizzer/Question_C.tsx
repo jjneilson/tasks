@@ -5,20 +5,14 @@ type ChangeEvent = React.ChangeEvent<
     HTMLTextAreaElement | HTMLInputElement | HTMLSelectElement
 >;
 
-export interface new_Question extends Question {
-    edit: boolean;
-}
-
 function MultipleChoiceQuestion_C({
     options,
     expected,
-    points,
-    edit
+    points
 }: {
     options: string[];
     expected: string;
     points: number;
-    edit: boolean;
 }): JSX.Element {
     const [chosen, setChosen] = useState<string>(options[0]);
     return (
@@ -86,9 +80,8 @@ export function Question_C({
     options,
     expected,
     points,
-    published,
-    edit
-}: new_Question): JSX.Element {
+    published
+}: Question): JSX.Element {
     const [stateName] = useState<string>(name);
     const [stateBody] = useState<string>(body);
     const [stateType] = useState<QuestionType>(type);
@@ -109,7 +102,6 @@ export function Question_C({
                             options={stateOptions}
                             expected={stateExpected}
                             points={statePoints}
-                            edit={edit}
                         ></MultipleChoiceQuestion_C>
                     )}
                     {stateType === "short_answer_question" && (
