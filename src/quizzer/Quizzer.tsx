@@ -40,6 +40,8 @@ export function Quizzer(): JSX.Element {
                 </li>
                 <li>Users can add a new quiz</li>
                 <li>Users can delete an existing quiz</li>
+                <li>Users can add a new quiz question</li>
+                <li>Users can delete an existing quiz question</li>
             </ul>
         </div>
     );

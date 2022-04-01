@@ -10,13 +10,54 @@ export interface Quiz_Int {
     points: number; //Total amount of points in the quiz
 }
 
+interface listprops {
+    setQuestions: (newQuestion: Question[]) => void;
+    questions: Question[];
+}
+
+function AddQuestion({ setQuestions, questions }: listprops): JSX.Element {
+    return (
+        <Button
+            onClick={() =>
+                setQuestions([
+                    ...questions,
+                    {
+                        id: 0,
+                        name: "New Question",
+                        type: "multiple_choice_question",
+                        body: "New Question",
+                        expected: "a",
+                        options: ["a"],
+                        points: 1,
+                        published: true
+                    }
+                ])
+            }
+        >
+            Add New Question
+        </Button>
+    );
+}
+
+function RemoveQuestion({ setQuestions, questions }: listprops): JSX.Element {
+    return (
+        <Button
+            onClick={() =>
+                setQuestions([...questions.splice(0, questions.length - 1)])
+            }
+        >
+            Delete Last Question
+        </Button>
+    );
+}
+
 export function Quiz({
     questions,
     title,
     description,
     points
 }: Quiz_Int): JSX.Element {
-    const [stateQuestions] = useState<Question[]>([...questions]);
+    const [stateQuestions, setQuestions] = useState<Question[]>([...questions]);
     const [stateTitle] = useState<string>(title);
     const [stateDescription] = useState<string>(description);
     const [statePoints] = useState<number>(points);
@@ -43,6 +84,18 @@ export function Quiz({
                         published={question.published}
                     ></Question_C>
                 ))}
+            {edit && (
+                <div>
+                    <AddQuestion
+                        setQuestions={setQuestions}
+                        questions={stateQuestions}
+                    ></AddQuestion>
+                    <RemoveQuestion
+                        setQuestions={setQuestions}
+                        questions={stateQuestions}
+                    ></RemoveQuestion>
+                </div>
+            )}
             {!edit && (
                 <Button onClick={() => setView(!view)}>Toggle View Quiz</Button>
             )}
