@@ -94,12 +94,6 @@ FAIL src/App.test.tsx
                     [36m>[39m
                       [0mToggle Edit Quiz[0m
                     [36m</button>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mDelete Quiz[0m
-                    [36m</button>[39m
                   [36m</div>[39m
                   [36m<hr />[39m
                 [36m</div>[39m
@@ -115,7 +109,7 @@ FAIL src/App.test.tsx
                       [0mQuestions: [0m
                       [0m2[0m
                       [0m Points: [0m
-                      [0m0[0m
+                      [0m2[0m
                     [36m</div>[39m
                     [36m<button[39m
                       [33mclass[39m=[32m"btn btn-primary"[39m
@@ -129,12 +123,6 @@ FAIL src/App.test.tsx
                     [36m>[39m
                       [0mToggle Edit Quiz[0m
                     [36m</button>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mDelete Quiz[0m
-                    [36m</button>[39m
                   [36m</div>[39m
                   [36m<hr />[39m
                 [36m</div>[39m
@@ -143,6 +131,12 @@ FAIL src/App.test.tsx
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
                   [0mAdd new empty quiz[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mDelete Last Quiz[0m
                 [36m</button>[39m
               [36m</div>[39m
               [36m<hr />[39m
@@ -165,6 +159,15 @@ FAIL src/App.test.tsx
                 [36m</li>[39m
                 [36m<li>[39m
                   [0mUsers can add a new quiz[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can delete an existing quiz[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can add a new quiz question[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can delete an existing quiz question[0m
                 [36m</li>[39m
               [36m</ul>[39m
             [36m</div>[39m
@@ -195,7 +198,7 @@ FAIL src/App.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
-All files                    |   91.98 |    86.98 |   92.02 |   91.76 |                   
+All files                    |   90.33 |     86.3 |   88.96 |   90.07 |                   
  src                         |   98.31 |    95.16 |   98.57 |   98.24 |                   
   App.tsx                    |   66.66 |       75 |      50 |   66.66 | 32                
   arrays.ts                  |     100 |      100 |     100 |     100 |                   
@@ -223,10 +226,10 @@ All files                    |   91.98 |    86.98 |   92.02 |   91.76 |
  src/interfaces              |       0 |        0 |       0 |       0 |                   
   answer.ts                  |       0 |        0 |       0 |       0 |                   
   question.ts                |       0 |        0 |       0 |       0 |                   
- src/quizzer                 |   44.11 |    34.78 |    37.5 |   44.11 |                   
+ src/quizzer                 |   41.46 |    30.43 |   34.78 |   41.46 |                   
   Question_C.tsx             |       0 |        0 |       0 |       0 | 17-92             
-  Quiz.tsx                   |      70 |    88.88 |      25 |      70 | 34-50             
-  QuizList.tsx               |    87.5 |      100 |      80 |    87.5 | 57                
+  Quiz.tsx                   |      50 |    77.77 |    12.5 |      50 | 19-46,75-103      
+  QuizList.tsx               |   81.81 |      100 |      75 |   81.81 | 61,81             
   Quizzer.tsx                |     100 |      100 |     100 |     100 |                   
 -----------------------------|---------|----------|---------|---------|-------------------
 Summary of all failing tests
@@ -303,12 +306,6 @@ FAIL src/App.test.tsx
                     [36m>[39m
                       [0mToggle Edit Quiz[0m
                     [36m</button>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mDelete Quiz[0m
-                    [36m</button>[39m
                   [36m</div>[39m
                   [36m<hr />[39m
                 [36m</div>[39m
@@ -324,7 +321,7 @@ FAIL src/App.test.tsx
                       [0mQuestions: [0m
                       [0m2[0m
                       [0m Points: [0m
-                      [0m0[0m
+                      [0m2[0m
                     [36m</div>[39m
                     [36m<button[39m
                       [33mclass[39m=[32m"btn btn-primary"[39m
@@ -338,12 +335,6 @@ FAIL src/App.test.tsx
                     [36m>[39m
                       [0mToggle Edit Quiz[0m
                     [36m</button>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"btn btn-primary"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mDelete Quiz[0m
-                    [36m</button>[39m
                   [36m</div>[39m
                   [36m<hr />[39m
                 [36m</div>[39m
@@ -352,6 +343,12 @@ FAIL src/App.test.tsx
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
                   [0mAdd new empty quiz[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mDelete Last Quiz[0m
                 [36m</button>[39m
               [36m</div>[39m
               [36m<hr />[39m
@@ -374,6 +371,15 @@ FAIL src/App.test.tsx
                 [36m</li>[39m
                 [36m<li>[39m
                   [0mUsers can add a new quiz[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can delete an existing quiz[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can add a new quiz question[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mUsers can delete an existing quiz question[0m
                 [36m</li>[39m
               [36m</ul>[39m
             [36m</div>[39m
@@ -405,5 +411,5 @@ FAIL src/App.test.tsx
 Test Suites: 2 failed, 19 passed, 21 total
 Tests:       2 failed, 133 passed, 135 total
 Snapshots:   0 total
-Time:        12.156 s
+Time:        12.702 s
 Ran all test suites.
