@@ -39,6 +39,9 @@ export function Quizzer(): JSX.Element {
                     be told if they are correct
                 </li>
                 <li>Users can add a new quiz</li>
+                <li>Users can delete an existing quiz</li>
+                <li>Users can add a new quiz question</li>
+                <li>Users can delete an existing quiz question</li>
             </ul>
         </div>
     );
