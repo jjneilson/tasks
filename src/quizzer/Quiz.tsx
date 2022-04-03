@@ -65,9 +65,9 @@ export function Quiz({
     const [view, setView] = useState<boolean>(false);
     return (
         <div>
-            <h4>{stateTitle}</h4>
-            <div>{stateDescription}</div>
-            <div>
+            <h4 data-testid="title">{stateTitle}</h4>
+            <div data-testid="description">{stateDescription}</div>
+            <div data-testid="points&questions">
                 Questions: {stateQuestions.length} Points: {statePoints}
             </div>
             {(view || edit) &&
