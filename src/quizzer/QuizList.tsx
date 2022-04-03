@@ -1,53 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Quiz_Int, Quiz } from "./Quiz";
-import { Question } from "../interfaces/question";
-
-const question: Question[] = [
-    {
-        id: 0,
-        name: "Question 1",
-        type: "multiple_choice_question",
-        body: "This is a multiple choice question",
-        expected: "c",
-        options: ["a", "b", "c"],
-        points: 1,
-        published: true
-    },
-    {
-        id: 1,
-        name: "Question 2",
-        type: "short_answer_question",
-        body: "This is a short answer question",
-        expected: "1+1",
-        options: [],
-        points: 1,
-        published: true
-    }
-];
-
-const PREMADES = [
-    {
-        questions: [...question],
-        title: "Math Quiz 1",
-        description: "The first math quiz",
-        points: [...question].reduce(
-            (total: number, questions: Question): number =>
-                total + questions.points,
-            0
-        )
-    },
-    {
-        questions: [...question],
-        title: "Math Quiz 2",
-        description: "The second math quiz",
-        points: [...question].reduce(
-            (total: number, questions: Question): number =>
-                total + questions.points,
-            0
-        )
-    }
-];
 
 interface listprops {
     setQuizzes: (newQuiz: Quiz_Int[]) => void;
@@ -86,8 +39,12 @@ function RemoveQuiz({ setQuizzes, quizzes }: listprops): JSX.Element {
     );
 }
 
-export function QuizList(): JSX.Element {
-    const [quizzes, setQuizzes] = useState<Quiz_Int[]>(PREMADES);
+export function QuizList({
+    quizzes_in
+}: {
+    quizzes_in: Quiz_Int[];
+}): JSX.Element {
+    const [quizzes, setQuizzes] = useState<Quiz_Int[]>(quizzes_in);
     return (
         <div>
             {quizzes.map((quiz: Quiz_Int) => (
