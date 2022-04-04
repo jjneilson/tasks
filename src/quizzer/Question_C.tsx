@@ -102,12 +102,14 @@ export function Question_C({
                             options={stateOptions}
                             expected={stateExpected}
                             points={statePoints}
+                            data-testid="multipleChoice"
                         ></MultipleChoiceQuestion_C>
                     )}
                     {stateType === "short_answer_question" && (
                         <ShortAnswerQuestion_C
                             expected={stateExpected}
                             points={statePoints}
+                            data-testid="shortAnswer"
                         ></ShortAnswerQuestion_C>
                     )}
                 </div>

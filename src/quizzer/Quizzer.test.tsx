@@ -2,12 +2,16 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { Quizzer } from "./Quizzer";
 
-describe("Quizzer Tests", () => {
+describe("Quizzer Component Tests", () => {
     beforeEach(() => {
         render(<Quizzer />);
     });
-    test("The Quizzer renders the sketch", () => {
-        const imageShow = screen.getAllByAltText("App Sketch");
-        expect(imageShow).toEqual("App Sketch");
+    test("The sketch is rendered", () => {
+        const imageShow = screen.getAllByAltText(/App Sketch/i);
+        expect(imageShow[0]).toBeInTheDocument();
+    });
+    test("There is a list of completed requirements", () => {
+        const listShow = screen.getByRole("list");
+        expect(listShow).toBeInTheDocument();
     });
 });
