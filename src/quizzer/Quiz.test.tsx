@@ -69,7 +69,7 @@ describe("Quiz component test", () => {
         expect(removeButton).toBeInTheDocument();
     });
     test("The total number of questions and number of points is displayed", () => {
-        const points_questions = screen.getByTestId(/points&questions/i);
+        const points_questions = screen.getByTestId(/pointsquestions/i);
         expect(points_questions).toBeInTheDocument();
     });
     test("The description is displayed", () => {

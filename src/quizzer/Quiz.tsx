@@ -67,7 +67,7 @@ export function Quiz({
         <div>
             <h4 data-testid="title">{stateTitle}</h4>
             <div data-testid="description">{stateDescription}</div>
-            <div data-testid="points&questions">
+            <div data-testid="pointsquestions">
                 Questions: {stateQuestions.length} Points: {statePoints}
             </div>
             {(view || edit) &&
